@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: customer-registration
+  datasource:
+    url: jdbc:mysql://localhost:3306/customerdb
+    username: root
+    password: PASSWORD
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+server:
+  port: 8092
